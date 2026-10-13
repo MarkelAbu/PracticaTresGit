@@ -1,13 +1,16 @@
 import javax.swing.*;
+import java.util.Random;
 
 public class Main {
+    private static int numero,predi;
+
     public static void main(String[] args) {
-Random random = new Random();
-numero = random.nextInt(100)+1;
+        Random random = new Random();
+        numero = random.nextInt(100)+1;
 
-adivinarNum();
+        adivinarNum();
 
-JOptionPane.showMessageDialog(null, "ZORIONAK " + numero + " es correcto");
+        JOptionPane.showMessageDialog(null, "ZORIONAK " + numero + " es correcto");
     }
 
     public static int adivinarNum(){
